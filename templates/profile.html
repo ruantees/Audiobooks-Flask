@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block add_files %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/profile.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li>Books</li>
+                <li><a href="{{ url_for('update_account') }}">Update account</a></li>
+                <li><a href="{{ url_for('delete_account') }}">Delete account</a></li>
+                <li><a href="{{ url_for('logout') }}">Log out</a></li>
+            </ul>
+        </div>
+
+        <div class="profile">
+            <div class="profile-header">
+                <h1>User Profile</h1>
+            </div>
+            <div class="profile-info">
+                <label>Name: </label>{{user.fullname}}<br>
+                <label>Email: </label>{{user.email}}<br>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

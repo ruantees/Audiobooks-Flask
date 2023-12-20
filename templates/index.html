@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block add_files %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="description">
+    <h1>Explore our unlimited library</h1>
+    <p>
+        Best-selling audiobooks, exclusive originals, popular podcasts, and more. <br>
+        Always find the best of what you're into. <br>
+        Experience our app on any device.
+    </p>
+</div>
+
+<h2 class="about">About us</h2>
+<div class="info">
+    <p class="desc">
+        Audiobook is the leading creator and provider of premium audio storytelling,
+        enriching the lives of millions of listeners every day.
+        With our customer-centric approach to technological innovation and programming,
+        Audiobook has reinvented a media category, and is the driving force behind today's audio entertainment.
+    </p>
+    <div class="signature">
+        <h3>Anton Rusynyk</h3>
+        <p>Founder of Audiobook</p>
+    </div>
+</div>
+
+<h2>Our happy customers</h2>
+<div class="review-gal">
+    <div class="gallery">
+        <a target="_blank" href="{{ url_for('static', filename='images/olivia.jpg') }}">
+            <img src="{{ url_for('static', filename='images/olivia.jpg') }}" alt="Olivia" width="600" height="400">
+        </a>
+        <p class="name">Olivia Marsh</p>
+        <p class="review">"Best audiobooks I've found"</p>
+
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="{{ url_for('static', filename='images/david.jpg') }}">
+            <img src="{{ url_for('static', filename='images/david.jpg') }}" alt="David" width="600" height="400">
+        </a>
+        <p class="name">David Stone</p>
+        <p class="review">"Perfect for busy readers"</p>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="{{ url_for('static', filename='images/natalie.jpg') }}">
+            <img src="{{ url_for('static', filename='images/natalie.jpg') }}" alt="Natalie" width="600" height="400">
+        </a>
+        <p class="name">Natalie Porter</p>
+        <p class="review">"Wonderful way to enjoy books"</p>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="{{ url_for('static', filename='images/mark.jpg') }}">
+            <img src="{{ url_for('static', filename='images/mark.jpg') }}" alt="Mark" width="600" height="400">
+        </a>
+        <p class="name">Mark Stephenson</p>
+        <p class="review">"The book about otters is cool"</p>
+    </div>
+</div>
+{% endblock %}

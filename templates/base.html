@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="created" content="15/10/2023">
+    <meta name="expires" content="01/01/2024">
+    <meta name="description" content="Unlimited audiobook library">
+    <meta name="keywords" content="Audiobook, Audio, Book">
+    <meta name="author" content="Anton Rusynyk">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/base.css') }}">
+
+    {% block add_files %}
+    {% endblock %}
+
+    <title>Audiobook</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/audio_logo.png') }}" type="image/icon type">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <img src="{{ url_for('static', filename='images/audio_logo.png') }}" alt="audio_logo">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('library') }}">Library</a>
+            <a href="{{ url_for('pricing') }}">Pricing</a>
+            <a href="{{ url_for('contact') }}">Contact us</a>
+        </div>
+        <div class="profile-btn">
+            <a href="{{ url_for('profile') }}">Profile</a>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="footer">
+        <a>©Copyright 2023 Anton Rusynyk</a>
+        <div class="links">
+            <a href="{{ url_for('sitemap') }}">Site map</a>
+            <a href="mailto:audiobooks@support.com">Our email</a>
+            <a href="{{ url_for('static', filename='documents/terms.pdf') }}">Terms of service</a>
+        </div>
+    </footer>
+</body>
+</html>

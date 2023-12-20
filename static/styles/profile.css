@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebar {
+    flex: 1;
+    background-color: #aaaaaa;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.profile {
+    flex: 3;
+    padding: 20px;
+    margin: 20px;
+}
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile-info {
+    margin-bottom: 20px;
+}
+.profile-info label {
+    font-weight: bold;
+}
+
+/*Footer*/
+.footer {
+  position: fixed;
+}

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block add_files %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/library.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="main">
+    <div class="articles">
+        <h1>Explore today's trending</h1>
+        <div class="post">
+            <div class="description">
+                <h3>Lessons in Chemistry by Bonnie Garmus</h3>
+                <p>
+                    A scientist and single mother living in California in the 1960s <br>
+                    becomes a star on a TV cooking show.
+                </p>
+            </div>
+            <img src="https://storage.googleapis.com/du-prd/books/images/9780385547345.jpg">
+        </div>
+        <div class="post">
+            <div class="description">
+                <h3>Spare by Prince Harry</h3>
+                <p>
+                    The Duke of Sussex details his struggles with the royal family, loss of his mother, <br>
+                    service in the British Army and marriage to Meghan Markle.
+                </p>
+            </div>
+            <img src="https://storage.googleapis.com/du-prd/books/images/9780593593806.jpg">
+        </div>
+        <div class="post">
+            <div class="description">
+                <h3>The Light We Carry by Michelle Obama</h3>
+                <p>
+                    The former first lady shares personal stories <br>
+                    and the tools she uses to deal with difficult situations.
+                </p>
+            </div>
+            <img src="https://storage.googleapis.com/du-prd/books/images/9780593237465.jpg">
+        </div>
+        <div class="post">
+            <div class="description">
+                <h3>Sapiens by Yuval Noah Harari</h3>
+                <p>
+                    How Homo sapiens became Earth's dominant species.
+                </p>
+            </div>
+            <img src="https://storage.googleapis.com/du-prd/books/images/9780062316097.jpg">
+        </div>
+        <div class="post">
+            <div class="description">
+                <h3>Odder by Katherine Applegate</h3>
+                <p>
+                    After a shark attack, Odder recuperates at the aquarium <br>
+                    with the scientists who raised her.
+                </p>
+            </div>
+            <img src="https://storage.googleapis.com/du-prd/books/images/9781250147424.jpg">
+        </div>
+    </div>
+</div>
+{% endblock %}

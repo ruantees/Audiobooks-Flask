@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block add_files %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/pricing.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1>Plans and pricing</h1>
+<table class="pricing">
+    <tr>
+        <th></th>
+        <th>Basic</th>
+        <th>Standard</th>
+        <th>Premium</th>
+    </tr>
+    <tr>
+        <td>Monthly price</td>
+        <td>Free</td>
+        <td>5 €</td>
+        <td>10 €</td>
+    </tr>
+    <tr>
+        <td>Audio quality</td>
+        <td>Normal</td>
+        <td>Good</td>
+        <td>Great</td>
+    </tr>
+    <tr>
+        <td>Number of devices</td>
+        <td>1</td>
+        <td>2</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>Ads</td>
+        <td>+</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Access to new releases</td>
+        <td>-</td>
+        <td>Limited</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" onclick="alert('The manager will contact you soon')" value="Try plan"></td>
+        <td><input type="submit" onclick="alert('The manager will contact you soon')" value="Try plan"></td>
+        <td><input type="submit" onclick="alert('The manager will contact you soon')" value="Try plan"></td>
+    </tr>
+  </table>
+{% endblock %}

@@ -1,0 +1,55 @@
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+  
+/*Pricing table*/
+.pricing{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    width: 75%;
+}
+.pricing th {
+  width: 150px;
+  height: 60px;
+}
+.pricing td{
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+td:first-child, th:first-child {
+  border-radius: 15px 0 0 15px;
+}
+td:last-child, th:last-child {
+  border-radius: 0 15px 15px 0;
+}
+tr:nth-child(even) {
+    background-color: #dfe7e8;
+}
+input[type=submit] {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  background-color: #51777c;
+  padding: 10px 15px;
+}
+input[type=submit]:hover {
+  background-color: #456469;
+}
+
+/*Footer*/
+.footer {
+  position: fixed;
+}

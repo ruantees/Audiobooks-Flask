@@ -1,0 +1,55 @@
+/*Contact form*/
+form {
+      background-color: #eeeeee;
+      padding: 60px;
+      padding-top: 0px; 
+}
+
+label {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 18px;
+}
+
+*::placeholder {
+      font-size: 18px;
+}
+select {
+      font-size: 18px;
+}
+
+input[type=email], input[type=text], select, textarea {
+      height: 35px;
+      width: 30%;
+      font-size: 18px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      resize: vertical;
+      padding: 8px;
+}
+
+textarea {
+      width: 100%;
+      padding: 8px;
+}
+  
+input[type=submit] {
+      background-color: #51777c;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+}
+input[type=submit]:hover {
+      background-color: #456469;
+}
+
+
+/*Footer*/
+.footer {
+  position: fixed;
+}

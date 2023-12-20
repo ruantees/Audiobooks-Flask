@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block add_files %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/contact.css') }}">
+<script src="{{ url_for('static', filename='form_validator.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+    <h1>Contact us</h1>
+    <form method="POST" action="" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        {{ form.email }} <br>
+        {{ form.fullname }} <br>
+        {{ form.file }} <br>
+        {{ form.submit }} <br>
+    </form>
+{% endblock %}
